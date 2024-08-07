@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Albert Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --main-color: #0d1117;
+  --assistant-color: #161b22;
+  --input-font-color: #c2c3c5;
+  --border-color: #30363d;
+  --text-color: #ffffff;
+}
+
+/* Utils */
+body {
+  background-color: var(--main-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+button,
+input {
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #3696ff;
+}
+
+/* Header */
+.header {
+  width: 75%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--assistant-color);
+  border-radius: 0.5rem;
+}
+
+/* Form */
+.form {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-indent: 10px;
+}
+
+.form-btn {
+  position: absolute;
+  top: 11%;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* Card */
+.card {
+  width: 55%;
+  margin: 0 auto;
+  background-color: var(--assistant-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  color: var(--text-color);
+  border: 3px solid var(--border-color);
+  border-radius: 1rem;
+}
+
+.card-img {
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.card-img img {
+  border-radius: 50%;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-name {
+  letter-spacing: 3px;
+}
+
+.card-username {
+  width: 55%;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.box {
+  background-color: var(--border-color);
+  padding: 10px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.card-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-bottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.card-bottom div:first-child {
+  width: 60%;
+}
+
+.error {
+  border-radius: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--assistant-color);
+  color: red;
+  text-align: center;
+}
